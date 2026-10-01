@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Source this file to load .env and export the OpenAI API key.
+
+if [[ "${BASH_SOURCE[0]}" == "$0" ]]; then
+    printf 'Error: setenv must be sourced. Use: source setenv\n' >&2
+    exit 1
+fi
+
+if source "$(dirname -- "${BASH_SOURCE[0]}")/.env"; then
+    export OPENAI_API_KEY
+else
+    return 1 2>/dev/null || exit 1
+fi

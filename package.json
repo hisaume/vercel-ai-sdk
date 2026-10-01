@@ -1,0 +1,25 @@
+{
+  "name": "coin-agent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.openai.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check": "tsc",
+    "start": "node index.openai.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@ai-sdk/openai": "^4.0.83",
+    "@openai/agents": "^0.17.2",
+    "ai": "^7.0.127",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "typescript": "^7.0.2"
+  }
+}
