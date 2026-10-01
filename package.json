@@ -1,16 +1,17 @@
 {
-  "name": "coin-agent",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.openai.ts",
+  "name": "ai-agent",
+  "version": "0.1.0",
+  "description": "AI agent using Vercel AI SDK and OpenAI Agents SDK",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "check": "tsc",
-    "start": "node index.openai.ts"
+    "start": "node index.ts",
+    "start:openai": "node index.openai.ts"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "hisaume",
+  "license": "MIT",
   "type": "module",
   "dependencies": {
     "@ai-sdk/openai": "^4.0.83",
